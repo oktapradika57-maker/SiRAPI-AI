@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background-color: #f4f7fe;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.card-ui {
+  @apply bg-white rounded-2xl border border-slate-200 shadow-sm;
+}
+
+.section-bar {
+  @apply flex items-center gap-2.5 text-slate-900 font-extrabold text-base sm:text-lg mt-6 mb-3;
+}
+.section-bar::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.input-ui {
+  @apply w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm sm:text-base font-semibold text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:bg-slate-100 disabled:text-slate-700;
+}
+
+.label-ui {
+  @apply block text-xs sm:text-sm font-bold text-slate-800 mb-1.5;
+}
+
+.btn-primary-red {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-rose-500 to-red-600 px-4 py-3 text-sm font-bold text-white shadow-md shadow-rose-500/20 hover:from-rose-600 hover:to-red-700 active:scale-[0.99] transition disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary-blue {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 px-4 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/20 hover:from-blue-700 hover:to-blue-800 active:scale-[0.99] transition disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 px-4 py-3 text-sm font-bold text-white shadow-md shadow-emerald-500/25 hover:from-emerald-600 hover:to-green-700 transition;
+}

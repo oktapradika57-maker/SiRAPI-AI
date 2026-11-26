@@ -1,0 +1,9 @@
+{
+  "name": "SiRAPI KUT \u2014 Portal Request Dana & PJB",
+  "short_name": "SiRAPI KUT",
+  "description": "Sistem Request Dana & Pertanggungjawaban Operasional PT Kinarya Utama Teknik",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F7FE",
+  "theme_color": "#007BFF"
+}
